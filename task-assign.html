@@ -208,32 +208,191 @@
     <!-- wrapper  -->
     <!-- ============================================================== -->
     <div class="dashboard-wrapper">
-            <div class="container-fluid dashboard-content">
-                <!-- ============================================================== -->
-                <!-- pageheader  -->
-                <!-- ============================================================== -->
-                <div class="row">
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                        <div class="page-header" id="top">
-                            <h2 class="pageheader-title">Welcome To Ticketing Project</h2>
-                        </div>
+        <div class="container-fluid dashboard-content">
+            <!-- ============================================================== -->
+            <!-- pageheader  -->
+            <!-- ============================================================== -->
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="page-header" id="top">
+                        <h2 class="pageheader-title">Task Assign</h2>
                     </div>
                 </div>
-                <!-- ============================================================== -->
-                <!-- end pageheader  -->
-                <!-- ============================================================== -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- end pageheader  -->
+            <!-- ============================================================== -->
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <form>
+                        <div class="row">
+                            <div class="col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <label>Project</label>
+                                    <select name="project" id="select1" class="custom-select" required="required">
+                                        <option value="select" selected="selected">Select</option>
+                                        <option value="project1">PRJ001-Human Resource CRM</option>
+                                        <option value="project2">PRJ002-Infra Upgrade</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <label>Assigned Employee</label>
+                                    <select name="project" id="select2" class="custom-select" required="required">
+                                        <option value="select" selected="selected">Select</option>
+                                        <option value="emp1">Delisa Norre</option>
+                                        <option value="emp2">John Kesy</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <label for="inputText7" class="col-form-label">Task Subject</label>
+                                    <input id="inputText7" type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <div class="form-group">
+                                    <label for="message">Detail</label>
+                                    <textarea class="form-control" id="message" rows="3"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 col-md-6 col-lg-12">
+                                <div class="float-right">
+                                    <button class="btn btn-success" type="button">Save</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="col-lg-12 col-sm-12">
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="page-header">
+                                <h2 class="pageheader-title">Task List</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th scope="col">Project</th>
+                            <th scope="col">Task Subject</th>
+                            <th scope="col">Assigned Employee</th>
+                            <th scope="col">Assigned Date</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>PRJ001-Human Resource CRM</td>
+                            <td>Database Connection</td>
+                            <td>John Kesy</td>
+                            <td>11/01/2020 18:12</td>
+                            <td>In Progress</td>
+                            <td class="actions">
+                                <a href="">
+                                    <button type="button" class="btn btn-warning btn-sm">Update</button>
+                                </a>
+                                <a href="" class="delete-row">
+                                    <button type="button" class="btn btn-secondary btn-sm">Delete</button>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>PRJ002-Infra Upgrade</td>
+                            <td>Server LAN Settings</td>
+                            <td>Delisa Norre</td>
+                            <td>11/01/2020 18:12</td>
+                            <td>UAT Testing</td>
+                            <td class="actions">
+                                <a href="">
+                                    <button type="button" class="btn btn-warning btn-sm">Update</button>
+                                </a>
+                                <a href="" class="delete-row">
+                                    <button type="button" class="btn btn-secondary btn-sm">Delete</button>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>PRJ001-Human Resource CRM</td>
+                            <td>REST Codes Development</td>
+                            <td>John Kesy</td>
+                            <td>11/01/2020 18:12</td>
+                            <td>Completed</td>
+                            <td class="actions">
+                                <a href="">
+                                    <button type="button" class="btn btn-warning btn-sm">Update</button>
+                                </a>
+                                <a href="" class="delete-row">
+                                    <button type="button" class="btn btn-secondary btn-sm">Delete</button>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>PRJ001-Human Resource CRM</td>
+                            <td>General Analysis</td>
+                            <td>John Kesy</td>
+                            <td>19/03/2020 18:12</td>
+                            <td>Open</td>
+                            <td class="actions">
+                                <a href="">
+                                    <button type="button" class="btn btn-warning btn-sm">Update</button>
+                                </a>
+                                <a href="" class="delete-row">
+                                    <button type="button" class="btn btn-secondary btn-sm">Delete</button>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>PRJ001-Human Resource CRM</td>
+                            <td>Environment Setup</td>
+                            <td>John Kesy</td>
+                            <td>25/11/2020 18:12</td>
+                            <td>In Progress</td>
+                            <td class="actions">
+                                <a href="">
+                                    <button type="button" class="btn btn-warning btn-sm">Update</button>
+                                </a>
+                                <a href="" class="delete-row">
+                                    <button type="button" class="btn btn-secondary btn-sm">Delete</button>
+                                </a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- footer -->
+                    <footer class="page-footer font-small blue fixed-bottom">
+                        <div class="footer-copyright text-center py-3">© 2020 Cybertek – All Rights Reserved</div>
+                    </footer>
+                </div>
             </div>
         </div>
-        <!-- ============================================================== -->
-
-        <!-- ============================================================== -->
     </div>
+    <!-- ============================================================== -->
+
+    <!-- ============================================================== -->
+
     <!-- ============================================================== -->
     <!-- end wrapper  -->
     <!-- ============================================================== -->
+
+    <!-- ============================================================== -->
+    <!-- end main wrapper  -->
 </div>
-<!-- ============================================================== -->
-<!-- end main wrapper  -->
 <!-- ============================================================== -->
 <!-- Optional JavaScript -->
 <!-- jquery 3.3.1 -->
@@ -256,5 +415,8 @@
 <script src="assets/vendor/charts/c3charts/d3-5.4.0.min.js"></script>
 <script src="assets/vendor/charts/c3charts/C3chartjs.js"></script>
 <script src="assets/libs/js/dashboard-ecommerce.js"></script>
+<script src="assets/vendor/datepicker/moment.js"></script>
+<script src="assets/vendor/datepicker/tempusdominus-bootstrap-4.js"></script>
+<script src="assets/vendor/datepicker/datepicker.js"></script>
 </body>
 </html>
